@@ -1,0 +1,294 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected {
+    opacity: 0.2;
+}
+
+.shopping-cart {
+    margin-left: 10px;
+}
+
+mat-card {
+    margin: 0 auto;
+    width: 600px;
+}
+
+mat-grid-list {
+    width: 100%;
+}
+
+mat-grid-tile {
+    cursor: pointer;
+    opacity: 0.7;
+    background-image: url("../assets/000.svg");
+}
+
+mat-grid-tile:hover {
+    opacity: 1;
+}
+
+.cell_0_0 {
+    background-image: url("../assets/711.svg");
+}
+
+.cell_0_1,
+.cell_0_2,
+.cell_0_3,
+.cell_0_4,
+.cell_0_5,
+.cell_0_6,
+.cell_0_7,
+.cell_0_8,
+.cell_0_9,
+.cell_0_10,
+.cell_0_11,
+.cell_0_12,
+.cell_0_13,
+.cell_0_14,
+.cell_0_15,
+.cell_0_16,
+.cell_0_18,
+.cell_0_19,
+.cell_0_20,
+.cell_0_21,
+.cell_0_22,
+.cell_0_23,
+.cell_0_24,
+.cell_0_25,
+.cell_0_26,
+.cell_0_27,
+.cell_0_28,
+.cell_0_29,
+.cell_0_30,
+.cell_0_31,
+.cell_0_32,
+.cell_0_33,
+.cell_3_1,
+.cell_3_2,
+.cell_3_3,
+.cell_3_4,
+.cell_3_5,
+.cell_3_6,
+.cell_7_1,
+.cell_7_2 {
+    background-image: url("../assets/111.svg");
+}
+
+.cell_0_17 {
+    background-image: url("../assets/171.svg");
+}
+
+.cell_0_34,
+.cell_3_7,
+.cell_7_2 {
+    background-image: url("../assets/117.svg");
+}
+
+.cell_1_0,
+.cell_2_0,
+.cell_3_0,
+.cell_4_0,
+.cell_5_0,
+.cell_6_0,
+.cell_8_0,
+.cell_9_0,
+.cell_10_0,
+.cell_11_0,
+.cell_12_0,
+.cell_14_0,
+.cell_15_0,
+.cell_16_0,
+.cell_17_0,
+.cell_18_0,
+.cell_19_0 {
+    background-image: url("../assets/700.svg");
+}
+
+.cell_1_17,
+.cell_2_17,
+.cell_3_17,
+.cell_4_17,
+.cell_5_17,
+.cell_6_17,
+.cell_7_17,
+.cell_8_17,
+.cell_9_17,
+.cell_11_17,
+.cell_12_17,
+.cell_13_17,
+.cell_14_17,
+.cell_15_17,
+.cell_16_17,
+.cell_17_17,
+.cell_18_17,
+.cell_19_17 {
+    background-image: url("../assets/070.svg");
+}
+
+.cell_8_15 {
+    background-image: url("../assets/004.svg");
+}
+
+.cell_8_16,
+.cell_9_15 {
+    background-image: url("../assets/631.svg");
+}
+
+.cell_8_18,
+.cell_9_19 {
+    background-image: url("../assets/136.svg");
+}
+
+.cell_8_17 {
+    background-image: url("../assets/171.svg");
+}
+
+.cell_8_19 {
+    background-image: url("../assets/400.svg");
+}
+
+.cell_10_15 {
+    background-image: url("../assets/700.svg");
+}
+
+.cell_10_5,
+.cell_10_17 {
+    background-image: url("../assets/777.svg");
+}
+
+.cell_4_7,
+.cell_5_7,
+.cell_6_7,
+.cell_7_7,
+.cell_8_2,
+.cell_8_7,
+.cell_9_2,
+.cell_9_7,
+.cell_10_2,
+.cell_10_7,
+.cell_10_19,
+.cell_11_2,
+.cell_11_7,
+.cell_12_2,
+.cell_12_7,
+.cell_13_7,
+.cell_14_7,
+.cell_15_7,
+.cell_16_7 {
+    background-image: url("../assets/007.svg");
+}
+
+.cell_11_15,
+.cell_12_16 {
+    background-image: url("../assets/364.svg");
+}
+
+.cell_11_19,
+.cell_12_18 {
+    background-image: url("../assets/463.svg");
+}
+
+.cell_12_15 {
+    background-image: url("../assets/001.svg");
+}
+
+.cell_12_17 {
+    background-image: url("../assets/474.svg");
+}
+
+.cell_12_19 {
+    background-image: url("../assets/100.svg");
+}
+
+.cell_3_0,
+.cell_7_0 {
+    background-image: url("../assets/611.svg");
+}
+
+.cell_13_0,
+.cell_17_0 {
+    background-image: url("../assets/644.svg");
+}
+
+.cell_1_34,
+.cell_2_34,
+.cell_3_34,
+.cell_4_34,
+.cell_5_34,
+.cell_6_34,
+.cell_7_34,
+.cell_8_34,
+.cell_9_34,
+.cell_10_34,
+.cell_11_34,
+.cell_12_34,
+.cell_13_34,
+.cell_14_34,
+.cell_15_34,
+.cell_16_34,
+.cell_17_34,
+.cell_18_34,
+.cell_19_34 {
+    background-image: url("../assets/007.svg");
+}
+
+.cell_20_1,
+.cell_20_2,
+.cell_20_3,
+.cell_20_4,
+.cell_20_5,
+.cell_20_6,
+.cell_20_7,
+.cell_20_8,
+.cell_20_9,
+.cell_20_10,
+.cell_20_11,
+.cell_20_12,
+.cell_20_13,
+.cell_20_14,
+.cell_20_15,
+.cell_20_16,
+.cell_20_18,
+.cell_20_19,
+.cell_20_20,
+.cell_20_21,
+.cell_20_22,
+.cell_20_23,
+.cell_20_24,
+.cell_20_25,
+.cell_20_26,
+.cell_20_27,
+.cell_20_28,
+.cell_20_29,
+.cell_20_30,
+.cell_20_31,
+.cell_20_32,
+.cell_20_33,
+.cell_13_1,
+.cell_17_1,
+.cell_17_2,
+.cell_17_3,
+.cell_17_4,
+.cell_17_5,
+.cell_17_6 {
+    background-image: url("../assets/444.svg");
+}
+
+.cell_20_0 {
+    background-image: url("../assets/744.svg");
+}
+
+.cell_20_17 {
+    background-image: url("../assets/474.svg");
+}
+
+.cell_20_34,
+.cell_13_2,
+.cell_17_7 {
+    background-image: url("../assets/447.svg");
+}
