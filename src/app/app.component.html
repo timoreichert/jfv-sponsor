@@ -1,24 +1,52 @@
 <div class="container">
+
   <mat-card>
+    <mat-card-header>
+        <div mat-card-avatar class="header-image"></div>
+        <mat-card-title>Sportplatz Pate</mat-card-title>
+        <mat-card-subtitle>TuS Mosella Schweich e.V.</mat-card-subtitle>
+    </mat-card-header>
     <mat-card-content>
-
-
-
-
-      <mat-grid-list cols="35" rowHeight="1:1">
+      <mat-grid-list cols="35" rowHeight="1:1" gutterSize="1">
         <ng-container *ngFor="let row of rows">
           <ng-container *ngFor="let cell of row.cells">
-            <mat-grid-tile [ngClass]="getClass(cell.id)" (click)="select(cell.id)"></mat-grid-tile>
+            <mat-grid-tile (press)="select(cell.id)" (click)="select(cell.id)" [ngClass]="getClass(cell.id)" >
+            </mat-grid-tile>
           </ng-container>
         </ng-container>
       </mat-grid-list>
+      <form [formGroup]="form" fxLayout="column">
+        <mat-form-field fxFlex>
+          <input matInput placeholder="Betrag" formControlName="amount" [contentEditable]="false" required>
+          <mat-icon matSuffix>euro_symbol</mat-icon>
+        </mat-form-field>
+        <mat-form-field fxFlex>
+          <input matInput placeholder="Name" formControlName="name" type="text" required>
+        </mat-form-field>
+        <mat-form-field fxFlex>
+          <input matInput placeholder="E-Mail" formControlName="email" type="email" email required>
+        </mat-form-field>
 
+        <mat-form-field fxFlex>
+          <input matInput placeholder="Straße" formControlName="street" type="text" required>
+        </mat-form-field>
 
+        <mat-form-field fxFlex>
+          <input matInput placeholder="PLZ" formControlName="zip" type="text" required>
+        </mat-form-field>
+        <mat-form-field fxFlex>
+          <input matInput placeholder="Stadt" formControlName="city" type="text" required>
+        </mat-form-field>
+
+        <div fxLayout="row">
+          <re-captcha fxFlex="auto" formControlName="recaptchaReactive"></re-captcha>
+          <div fxFlex="auto" fxFlexAlign="end">
+            <button mat-button [disabled]="form.invalid" (click)="submit()">senden</button>
+            <button mat-button (click)="reset()">löschen</button>
+          </div>
+        </div>
+      </form>
     </mat-card-content>
-    <mat-card-actions>
-      <span class="shopping-cart"> Warenkorb: {{amount | currency:'EUR':true }}</span>
-      <button mat-button>Spenden</button>
-    </mat-card-actions>
   </mat-card>
 </div>
 <router-outlet></router-outlet>

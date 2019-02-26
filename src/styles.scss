@@ -1,4 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import '~@angular/material/theming';
+@include mat-core();
+
+$jfv-app-primary: mat-palette($mat-blue);
+$jfv-app-accent:  mat-palette($mat-grey, A200, A100, A400);
+$jfv-app-warn:    mat-palette($mat-red);
+
+$jfv-app-theme: mat-dark-theme($jfv-app-primary, $jfv-app-accent, $jfv-app-warn);
+@include angular-material-theme($jfv-app-theme);
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
