@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { MatBottomSheet, MAT_BOTTOM_SHEET_DATA } from '@angular/material';
+import { MatBottomSheet, MAT_BOTTOM_SHEET_DATA } from '@angular/material/bottom-sheet';
 
 export class Cell {
   id: string;
